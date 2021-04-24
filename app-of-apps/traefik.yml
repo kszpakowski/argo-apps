@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: ./traefik
+    path: traefik
     repoURL: https://github.com/kszpakowski/argo-apps.git
     targetRevision: HEAD
   syncPolicy:
