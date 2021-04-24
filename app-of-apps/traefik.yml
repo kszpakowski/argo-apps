@@ -9,8 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
+    helm:
+      valueFiles:
+      - values.yaml
     path: traefik
     repoURL: https://github.com/kszpakowski/argo-apps.git
     targetRevision: HEAD
