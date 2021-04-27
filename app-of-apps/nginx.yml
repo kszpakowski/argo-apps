@@ -12,7 +12,7 @@ spec:
     helm:
       valueFiles:
       - values.yaml
-    path: ngnix
+    path: nginx
     repoURL: https://github.com/kszpakowski/argo-apps.git
     targetRevision: HEAD
   syncPolicy:
