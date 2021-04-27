@@ -31,6 +31,10 @@ data:
         #    proxy_pass   http://127.0.0.1;
         #}
 
+        location /google {
+            proxy_pass   https://google.com;
+        }
+
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         #
         #location ~ \.php$ {
