@@ -36,7 +36,6 @@ spec:
           volumeMounts:
           - name: nginx-conf-volume
             mountPath: /etc/nginx
-            path: nginx.conf
           ports:
             - name: http
               containerPort: 80
