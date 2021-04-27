@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: traefik
+  name: ngnix
   namespace: argocd
 spec:
   destination:
-    namespace: traefik
+    namespace: ngnix
     server: https://kubernetes.default.svc
   project: default
   source:
     helm:
       valueFiles:
       - values.yaml
-    path: traefik
+    path: ngnix
     repoURL: https://github.com/kszpakowski/argo-apps.git
     targetRevision: HEAD
   syncPolicy:
