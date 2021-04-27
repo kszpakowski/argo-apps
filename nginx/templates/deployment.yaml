@@ -35,7 +35,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - name: nginx-conf-volume
-            mountPath: /etc/nginx/nginx.conf
+            mountPath: /etc/nginx
+            path: nginx.conf
           ports:
             - name: http
               containerPort: 80
