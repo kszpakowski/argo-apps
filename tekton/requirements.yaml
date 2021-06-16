@@ -1,4 +1,0 @@
-dependencies:
-  - name: tekton
-    version: 0.24.1
-    repository: https://cdfoundation.github.io/tekton-helm-chart/
