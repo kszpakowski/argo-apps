@@ -1,5 +1,0 @@
-tekton-pipeline:
-  pipelines:
-    version: "0.25.0"
-  dashboard:
-    version: "0.17.0"

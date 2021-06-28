@@ -1,8 +1,0 @@
-apiVersion: v2
-name: tekton
-version: 0.1.0
-appVersion: "0.0.1"
-# dependencies:
-#   - name: umbrella
-#     version: 0.0.1
-#     repository: https://eddycharly.github.io/tekton-helm
