@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ngnix
+  namespace: argocd
+spec:
+  destination:
+    namespace: tekton-operator
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: operators/tekton
+    repoURL: https://github.com/kszpakowski/argo-apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
