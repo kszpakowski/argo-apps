@@ -1,0 +1,4 @@
+dependencies:
+  - name: jenkins
+    version: 3.4.1
+    repository: https://charts.jenkins.io
