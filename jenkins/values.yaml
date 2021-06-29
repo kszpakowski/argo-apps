@@ -1,4 +1,4 @@
 jenkins: 
   persistence:
-  enabled: true
-  storageClass: longhorn
+    enabled: true
+    storageClass: longhorn
