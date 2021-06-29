@@ -13,6 +13,7 @@ spec:
     port: 80
     protocol: TCP
     targetPort: 8080
+    nodePort: 30007
   - name: https
     port: 443
     protocol: TCP
@@ -21,4 +22,3 @@ spec:
     app.kubernetes.io/name: argocd-server
   sessionAffinity: None
   type: NodePort
-  nodePort: 30007
